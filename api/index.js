@@ -13,8 +13,10 @@ const path = require("path");
 
 dotenv.config();
 
+const uri = "mongodb+srv://19akasht:qVMu285YA4ZJVGoy@cluster0.0g4m8k1.mongodb.net/";
+
 mongoose.connect(
-  process.env.MONGO_URL,
+  uri,
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => {
     console.log("Connected to MongoDB");
